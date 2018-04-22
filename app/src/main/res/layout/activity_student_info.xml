@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context="com.example.mujahid.icttask.StudentInfo">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_people_black_24dp"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Institute Name"
+        android:id="@+id/instituteName"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/institute_24dp"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Phone"
+        android:layout_marginTop="5dp"
+        android:id="@+id/phone"
+        android:drawableStart="@drawable/ic_phone_android_black_24dp"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:id="@+id/radioGroup"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:text="Male"
+        android:textStyle="bold"
+        android:id="@+id/male"
+        android:checked="true"
+        android:textSize="17sp"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:text="Female"
+        android:id="@+id/female"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_height="wrap_content" />
+
+</RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data"
+        android:id="@+id/saveData"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
